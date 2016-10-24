@@ -1,0 +1,6 @@
+00000000  FF1E0609          call word far [0x906]
+00000004  EBFE              jmp short 0x4
+00000006  0A09              or cl,[bx+di]
+00000008  0000              add [bx+si],al
+0000000A  B83412            mov ax,0x1234
+0000000D  CB                retf

@@ -1,0 +1,7 @@
+00000000  C7060C091009      mov word [0x90c],0x910
+00000006  FF160C09          call word [0x90c]
+0000000A  EBFE              jmp short 0xa
+0000000C  0400              add al,0x0
+0000000E  0000              add [bx+si],al
+00000010  B83412            mov ax,0x1234
+00000013  C3                ret

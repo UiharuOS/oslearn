@@ -1,0 +1,8 @@
+00000000  E80600            call word 0x9
+00000003  EBFE              jmp short 0x3
+00000005  0400              add al,0x0      ; dd
+00000007  0000              add [bx+si],al  ; dd
+00000009  B83412            mov ax,0x1234 ; function name is just a simbol
+0000000C  C3                ret
+
+; 0x0900 - 0x0000 - 0x0300 = 0x0600, call length is->3

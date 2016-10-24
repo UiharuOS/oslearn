@@ -1,0 +1,15 @@
+var key: boolean;
+begin
+    .
+    .
+    .
+    key:=true;  // 进入临界区, 互斥
+    while key do TS(lock, key);
+        临界区操作(lock=true)
+    lock:=false;
+    .
+    .
+    .
+end;
+
+原语: 操作系统执行特定功能的代码, 是不能被中断的, 用于进程间通信和调度
